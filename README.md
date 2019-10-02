@@ -34,4 +34,14 @@ Folder with files with the fund information retrieved from the web in CSV format
 
 ### SRC 
 
-Folder with .py files.
+Folder with .py files. 
+
+## Libraries 
+
+pandas 
+dotenv
+sentry_sdk
+os
+requests
+bs4.BeautifulSoup
+

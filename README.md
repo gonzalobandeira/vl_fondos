@@ -38,10 +38,15 @@ Folder with .py files.
 
 ## Libraries 
 
-pandas 
+pandas
+
 dotenv
+
 sentry_sdk
+
 os
+
 requests
+
 bs4.BeautifulSoup
 

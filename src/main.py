@@ -1,4 +1,5 @@
 from fondos_scraping import f_scraping
+import db_mysql as dbmysql
 import pandas as pd
 from dotenv import load_dotenv
 import os
@@ -26,6 +27,10 @@ def main():
         info_fondos.to_csv("{}/output/info_fondos.csv".format(abs_path),index= False)
     except Exception as e:
         print("Could not write info_fondos.csv. ", e)
+
+    #Escribimos base de datos
+    dbmysql.db_fondo(info_fondos)
+
     print("Info obtained!")
 
 if __name__=="__main__":
